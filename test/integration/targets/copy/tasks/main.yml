@@ -347,6 +347,9 @@
     that:
       - "recursive_copy_result|changed"
 
+- name: check
+  stat: path={{output_dir}}
+  
 - name: check that a file in a directory was transferred
   stat: path={{output_dir}}/sub/bar.txt
   register: stat_bar
