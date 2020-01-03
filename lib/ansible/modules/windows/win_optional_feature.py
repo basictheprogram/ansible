@@ -24,7 +24,7 @@ options:
     description:
       - The name(s) of the feature to install.
       - This relates to C(FeatureName) in the Powershell cmdlet.
-      - To list all available features use the PowerShell command C(Get-WindowsOptionalFeature).
+      - To list all available features use the PowerShell command C(Get-WindowsOptionalFeature -Online).
     type: list
     required: yes
   state:
